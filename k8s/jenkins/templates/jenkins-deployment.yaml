@@ -18,8 +18,11 @@ spec:
           env:
             - name: JENKINS_USERNAME
               value: {{ default "test" .Values.jenkinsUsername | quote }}
-              {{ if .Values.jenkinsPassword }}
-              value: {{ default "test" .Values.jenkinsUsername | quote }}
+              {{- if .Values.jenkinsPassword }}
+              value: {{ .Values.jenkinsPassword }}
+              {{- else }}
+              value: testPassword
+              {{- end }}
           ports:
             - name: http
               containerPort: 8080
