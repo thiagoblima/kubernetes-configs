@@ -5,6 +5,10 @@ image:
 jenkinsUsername: ""
 jenkinsPassword: ""
 
-containerPort:
+containerPorts:
   - name: http
     port: 8080
+
+service:
+  type: NodePort
+  nodePort: 30080
