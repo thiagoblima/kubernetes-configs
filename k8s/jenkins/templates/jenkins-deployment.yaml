@@ -16,8 +16,8 @@ spec:
         - name: jenkins
           image: {{ printf "%s:%s" .Values.image.repository .Values.image.tag }}
           env:
-            - name: {{ default "test" .Values.jenkinsUsername | quote }}
-              value: test
+            - name: JENKINS_USERNAME
+              value: {{ default "test" .Values.jenkinsUsername | quote }}
           ports:
             - name: http
               containerPort: 8080
