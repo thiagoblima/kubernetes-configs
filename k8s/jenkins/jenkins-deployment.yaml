@@ -4,11 +4,11 @@ metadata:
   name: jenkins
 spec:
   replicas: 1
-  selector: 
+  selector:
     matchLabels:
       app: jenkins
-  template: 
-    metadata: 
+  template:
+    metadata:
       labels:
         app: jenkins
     spec:
