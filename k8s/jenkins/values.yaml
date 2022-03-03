@@ -4,3 +4,7 @@ image:
 
 jenkinsUsername: ""
 jenkinsPassword: ""
+
+containerPort:
+  - name: http
+    port: 8080
