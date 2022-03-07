@@ -1,6 +1,15 @@
 apiVersion: v2
 name: minio
-description: A Helm chart for Kubernetes
+description: MinIO, a Kubernetes object storage server compatible with Amazon S3
+  and other cloud storage services.
+
+keywords:
+  - minio
+  - storage
+  - object-storage
+maintainers:
+  - name: Thiago Brito de Lima
+    email: thiagolimasp@live.com
 
 # A chart can be either an 'application' or a 'library' chart.
 #
@@ -21,4 +30,4 @@ version: 0.1.0
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
-appVersion: "1.16.0"
+appVersion: 2020.10.28
